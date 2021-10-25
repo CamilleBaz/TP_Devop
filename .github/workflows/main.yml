@@ -15,7 +15,12 @@ jobs:
         with:
           java-version: '11'
       - name: Build and test with Maven
-        run: mvn -B package --file simple-api/pom.xml
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: mvn -B verify sonar:sonar -Dsonar.projectKey=CamilleBaz_TP_Devop -Dsonar.organization=camillebaz -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{secrets.SONAR_TOKEN }} --file ./simple-api/pom.xml
+        
+        
         
   build-and-push-docker-image: 
     needs: build-and-test-app

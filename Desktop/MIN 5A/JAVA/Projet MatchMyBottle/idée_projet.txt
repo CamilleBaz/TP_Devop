@@ -1,0 +1,24 @@
+	Match my bottle 
+
+CRITERES : 
+	- argent (moins de 10 // 10 à 30// 30+)
+	- avec qui ( en date // seul au monde // avec mon plan cul//avec les collégues // en famille )
+	- quelle ambiance tu veux ? (envie de faire la fete // envie de faire chiller // en date // envie d'oublier ma vie) 
+
+
+BDD :
+	- Bouteille d'eau 
+	- Tequilla 
+	- Vin 
+	- Champagne
+	- Biére
+	- Ricard
+
+
+IDEE ECRAN :
+	- Premier écran est ce que tu as +18 
+	- Deuxieme choix des critéres 
+	- Troisiéme résultats 
+
+	- Ecran admin ou on rajoute les bouteilles 
+
